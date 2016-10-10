@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+    <title>Ubermelon Order Form</title>
+</head>
+<body>
+    <h1>Order!</h1>
+    <table>
+      <tr>
+        <th>Melon Name</th>
+        <th>Price per lb</th>
+      </tr>
+      <tr>
+        <td>Watermelon</td>
+        <td>$1.59</td> 
+      </tr>
+      <tr>
+        <td>Honeydew</td>
+        <td>$0.99</td> 
+      </tr>
+      <tr>
+        <td>Canteloupe</td>
+        <td>$1.29</td> 
+      </tr>
+      <tr>
+        <td>Crenshaw</td>
+        <td>$2.19</td> 
+      </tr>
+      <tr>
+        <td>Canary</td>
+        <td>$11.99</td> 
+      </tr>
+    </table>
+
+    <p>Place your orders here! You know you want to.</p>
+
+    <form action="https://ubermelon-order-form.herokuapp.com/process">
+
+        First Name: <input type="text" name="firstname"><br>
+        Last Name: <input type="text" name="lastname"><br>
+        <div>Melon Type:
+            <select name="melontype">
+                <option value="watermelon">Watermelon</option>
+                <option value="honeydew">Honeydew</option>
+                <option value="canteloupe">Canteloupe</option>
+                <option value="crenshaw">Crenshaw</option>
+                <option value="canary">Canary</option>
+            </select>
+        </div>
+        <div>Quantity*: <input type="text" name="quantity" required></div>
+        <div>Delivery Time 
+            <input type="radio" name="deliverytime" value="12am12pm">12:00am-12:00pm
+            <input type="radio" name="deliverytime" value="12pm12am">12:00pm-12:00am
+            <input type="radio" name="deliverytime" value="illusion">Time is an illusion
+        </div>
+        <div>Returning Customer?
+            <input type="radio" name="returning" value="yes">Yes
+            <input type="radio" name="returning" value="no">No
+        </div>
+        <div>For Statistical Purposes:
+            <input type="checkbox" name="stats" value="dog">Dog
+            <input type="checkbox" name="stats" value="cat">Cat
+            <input type="checkbox" name="stats" value="hedgehog">Hedgehog
+            <input type="checkbox" name="stats" value="balloonicorn">Balloonicorn
+            <input type="checkbox" name="stats" value="yak">Yak
+        </div>
+        <div><input type="submit"></div>
+        <p>*Quantities given are by the flat.</p>
+
+        <table>
+            <tr>
+                <th> </th>
+                <th>HotDog</th>
+                <th>Burger</th>
+                <th>Sandwich</th>
+            </tr>
+            <tr>
+                <td><b>Ketchup</b></td>
+                <td>
+                    <input type="checkbox" name="hotdog" 
+                           value="ketchup">
+                </td>
+                <td>
+                    <input type="checkbox" name="burger" 
+                           value="ketchup">
+                </td>
+                <td>
+                  <input type="checkbox" name="sandwich" 
+                        value="ketchup">
+                </td>
+
+            </tr>
+            <tr>
+                <td><b>Mustard</b></td>
+                <td>
+                    <input type="checkbox" name="hotdog" 
+                           value="mustard">
+                </td>
+                <td>
+                    <input type="checkbox" name="burger" 
+                           value="mustard">
+                </td><td>
+                    <input type="checkbo" name="sandwich" 
+                           value="mustards">
+                </td>
+            </tr>
+            <tr>
+                <td><b>Jalapenos</b></td>
+                <td>
+                    <input type="checkbox" name="hotdog" 
+                           value="jalapenos">
+                </td>
+                <td>
+                    <input type="checkbox" name="burger" 
+                           value="jalapenos">
+                </td><td>
+                    <input type="checkbox" name="sandwich" 
+                           value="jalapenos">
+                </td>
+            </tr>
+            <tr>
+                <td><b>Banana Peppers</b></td>
+                <td>
+                    <input type="checkbox" name="hotdog" 
+                           value="banaapeppers">
+                </td>
+                <td>
+                    <input type="checkbox" name="burger" 
+                           value="banaapeppers">
+                </td><td>
+                    <input type="checkbox" name="sandwich" 
+                           value="banaapeppers">
+                </td>
+            </tr>
+    </form>
+
+
+
+
+
+    </table>
+
+
+</body>
+</html>
